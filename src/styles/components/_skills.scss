@@ -1,0 +1,40 @@
+.skills-section {
+  padding-top: 90px;
+  .container {
+    padding-left: 100px;
+    h2 {
+      padding-bottom: 50px;
+      font-size: 40px;
+      color: rgb(31, 31, 31);
+      font-weight: bold;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: space-evenly;
+
+      * {
+        height: 120px;
+        width: 120px;
+      }
+      .logo-1 {
+        background: url("../../assets/img/photoshop.png") center/cover;
+      }
+      .logo-2 {
+        background: url("../../assets/img/illustrator.png") center/cover;
+      }
+      .logo-3 {
+        background: url("../../assets/img/premierepro.png") center/cover;
+      }
+      .logo-4 {
+        background: url("../../assets/img/canva.png") center/cover;
+      }
+      .logo-5 {
+        background: url("../../assets/img/figma.png") center/cover;
+      }
+      .logo-6 {
+        background: url("../../assets/img/wordpress.png") center/cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.navigation {
+  padding: 10px 15px 0px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    a {
+      padding: 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #fff;
+
+      li {
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+
+      :hover {
+        color: #fff;
+        background-color: #2b2278;
+      }
+    }
+  }
+}

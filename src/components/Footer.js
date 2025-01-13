@@ -5,18 +5,10 @@ const Footer = () => {
   return (
     <div className="footer-section">
       <div className="container">
-        <div className="input-email">
-          <input
-            type="text"
-            name="Enter your email"
-            placeholder="Entrer votre email"
-          />
-          <input type="submit" value={"Envoyer"} />
-        </div>
         <div className="contact">
           <div className="phone-section">
             <div className="call-icon"></div>
-            <NavLink to="/">Appeler +33 6 03 50 11 75</NavLink>
+            <p>+33 6 03 50 11 75</p>
           </div>
           <div className="mail-section">
             <div className="mail-icon"></div>

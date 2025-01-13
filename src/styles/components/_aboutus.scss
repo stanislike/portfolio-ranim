@@ -1,6 +1,8 @@
 .about-section {
   padding-top: 90px;
   display: flex;
+  align-items: center;
+
   .left {
     width: 50%;
     padding: 0 15px;
@@ -25,9 +27,13 @@
   .right {
     padding: 0 15px;
     width: 50%;
+    display: flex;
+    justify-content: center;
+
     .img-right {
       height: 540px;
       width: 540px;
+      box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
       background: url("../../assets/img/Ranim.jpg") center/cover;
     }
   }

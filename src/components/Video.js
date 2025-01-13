@@ -6,8 +6,7 @@ const Video = () => {
   return (
     <div className="video-section">
       <div className="video-container">
-        {/* <ReactPlayer url={MyVideo} playing controls className="react-player" /> */}
-        <video src={MyVideo} controls />
+        <ReactPlayer url={MyVideo} controls className="react-player" />
       </div>
       <div className="text-container">
         <h2>Voir ma vidéo</h2>

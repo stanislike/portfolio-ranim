@@ -1,6 +1,7 @@
 .header_section {
   height: 100vh;
-  background: url(../../assets/img/banner-bg.png) center;
+  // background: url(../../assets/img/banner-bg.png) center;
+  background-color: #2b2c2c;
 
   .banner-section {
     padding-top: 20vh;
@@ -33,11 +34,10 @@
         margin-top: 50px;
         padding: 10px 0px;
         border-radius: 30px;
-
-        :hover {
-          color: #fff;
-          background-color: #2b2278;
-        }
+      }
+      :hover {
+        color: #fff;
+        background-color: #2b2278 !important;
       }
     }
   }

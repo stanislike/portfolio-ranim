@@ -1,6 +1,6 @@
 .navigation {
   padding: 10px 15px 0px;
-  background-color: #2b2c2c;
+  background-color: $olivenoir-color;
 
   ul {
     display: flex;
@@ -11,7 +11,7 @@
       padding: 10px;
       font-size: 20px;
       text-transform: uppercase;
-      color: #fff;
+      color: $jouvance-color;
 
       li {
         padding: 10px 20px;
@@ -19,8 +19,8 @@
       }
 
       :hover {
-        color: #fff;
-        background-color: #2b2278;
+        background-color: $charbon-color;
+        // color: $olivenoir-color;
       }
     }
   }

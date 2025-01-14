@@ -1,3 +1,13 @@
+$charbon-color: #5b5e4f;
+$olivenoir-color: #38402a;
+$jouvance-color: #e3e0d5;
+$argile-color: #97895a;
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +18,9 @@
 }
 
 body {
-  font-family: sans-serif;
+  background-color: $jouvance-color;
+  color: $olivenoir-color;
+  font-family: "Poppins";
 }
 
 h1,

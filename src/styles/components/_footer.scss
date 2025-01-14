@@ -1,7 +1,7 @@
 .footer-section {
   padding-top: 90px;
   padding-bottom: 30px;
-  background-color: #2b2c2c;
+  background-color: $olivenoir-color;
   //   background: url("../../assets/img/footer-bg.png") center/cover;
 
   .container {
@@ -28,7 +28,7 @@
         }
 
         p {
-          color: #fff;
+          color: $jouvance-color;
         }
 
         &:after {
@@ -38,7 +38,7 @@
           left: 100%;
           width: 3px;
           height: 100%;
-          background-color: #fff;
+          background-color: $jouvance-color;
         }
       }
 
@@ -55,7 +55,7 @@
         }
 
         a {
-          color: #fff;
+          color: $jouvance-color;
 
           &:hover {
             color: #2b2278;

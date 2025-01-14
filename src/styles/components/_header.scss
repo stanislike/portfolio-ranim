@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100%;
   // background: url(../../assets/img/banner-bg.png) center;
-  background-color: #2b2c2c;
+  background-color: $olivenoir-color;
 
   .banner-section {
     padding-top: 20vh;
@@ -13,14 +13,14 @@
       font-size: 80px;
       text-transform: uppercase;
       font-weight: bold;
-      color: #fff;
+      color: $jouvance-color;
     }
 
     h2 {
       padding-top: 4px;
       font-size: 24px;
       font-weight: bold;
-      color: #fff;
+      color: $jouvance-color;
     }
 
     a {
@@ -28,8 +28,8 @@
       li {
         width: 200px;
         font-size: 16px;
-        color: rgb(20, 20, 20);
-        background-color: #fff;
+        color: $olivenoir-color;
+        background-color: $jouvance-color;
         text-align: center;
         font-weight: 400;
         margin-top: 50px;
@@ -37,8 +37,8 @@
         border-radius: 30px;
       }
       :hover {
-        color: #fff;
-        background-color: #2b2278 !important;
+        color: $jouvance-color;
+        background-color: $charbon-color !important;
       }
     }
   }

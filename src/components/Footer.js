@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
@@ -7,11 +8,11 @@ const Footer = () => {
       <div className="container">
         <div className="contact">
           <div className="phone-section">
-            <div className="call-icon"></div>
+            <FontAwesomeIcon icon={["fas", "phone"]} />
             <p>+33 6 03 50 11 75</p>
           </div>
           <div className="mail-section">
-            <div className="mail-icon"></div>
+            <FontAwesomeIcon icon={["fas", "envelope"]} />
             <NavLink to="mailto:ranimahmed@outlook.fr">
               ranimahmed@outlook.fr
             </NavLink>
@@ -20,23 +21,11 @@ const Footer = () => {
         <div className="social-media">
           <ul>
             <li>
-              <NavLink to="https://www.facebook.com/" target="_blank">
-                <div className="fb-icon"></div>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="https://x.com/" target="_blank">
-                <div className="twitter-icon"></div>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="https://fr.linkedin.com/" target="_blank">
-                <div className="linkedin-icon"></div>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="https://www.instagram.com/" target="_blank">
-                <div className="instagram-icon"></div>
+              <NavLink
+                to="https://www.linkedin.com/in/ranim-ahmed-8757212a4/"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={["fab", "linkedin"]} />
               </NavLink>
             </li>
           </ul>

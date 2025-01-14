@@ -21,10 +21,10 @@
         justify-content: space-evenly;
         align-items: center;
 
-        .call-icon {
-          height: 51px;
-          width: 32px;
-          background: url(../../assets/img/call-icon.png) center/cover no-repeat;
+        svg {
+          height: 44px;
+          width: 44px;
+          color: $jouvance-color;
         }
 
         p {
@@ -48,17 +48,23 @@
         justify-content: space-evenly;
         align-items: center;
 
-        .mail-icon {
-          height: 31px;
-          width: 45px;
-          background: url(../../assets/img/mail-icon.png) center/cover no-repeat;
+        svg {
+          height: 44px;
+          width: 44px;
+          color: $jouvance-color;
         }
+
+        // .mail-icon {
+        //   height: 31px;
+        //   width: 45px;
+        //   background: url(../../assets/img/mail-icon.png) center/cover no-repeat;
+        // }
 
         a {
           color: $jouvance-color;
 
           &:hover {
-            color: #2b2278;
+            color: $argile-color;
           }
         }
       }
@@ -66,6 +72,7 @@
 
     .social-media {
       padding-top: 40px;
+
       ul {
         display: flex;
         justify-content: center;
@@ -73,25 +80,15 @@
           width: 32px;
           margin: 10px;
           a {
-            .fb-icon {
-              height: 32px;
-              background: url(../../assets/img/fb-icon.png) center/cover;
-              background-repeat: no-repeat;
-            }
-            .twitter-icon {
-              height: 32px;
-              background: url(../../assets/img/twitter-icon.png) center/cover;
-              background-repeat: no-repeat;
-            }
-            .instagram-icon {
-              height: 32px;
-              background: url(../../assets/img/instagram-icon.png) center/cover;
-              background-repeat: no-repeat;
-            }
-            .linkedin-icon {
-              height: 32px;
-              background: url(../../assets/img/linkedin-icon.png) center/cover;
-              background-repeat: no-repeat;
+            svg {
+              transition: 0.1s ease;
+              height: 100%;
+              width: 100%;
+              color: $jouvance-color;
+
+              &:hover {
+                color: $argile-color;
+              }
             }
           }
         }

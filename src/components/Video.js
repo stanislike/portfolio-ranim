@@ -1,7 +1,6 @@
 import React from "react";
 import { useRef } from "react";
-// import ReactPlayer from "react-player";
-// import MyVideo from "../assets/video/test.mp4";
+import MyVideo from "../assets/video/elenor.mp4";
 
 const Video = () => {
   const videoRef = useRef(null);
@@ -39,17 +38,9 @@ const Video = () => {
           preload="auto"
           onError={() => console.error("Erreur lors du chargement de la vidéo")}
         >
-          <source src="/video/test.mp4" />
+          <source src={MyVideo} type="video/mp4" />
           Votre navigateur ne supporte pas la vidéo.
         </video>
-        <div className="text-container">
-          <h2>Voir ma vidéo</h2>
-          <p>
-            Many variations of passages of Lorem Ipsum available, but the
-            majority have suffered alteration in some form, by injected humour,
-            or randomised words which
-          </p>
-        </div>
         <button className="play-button" onClick={handlePlay} />
       </div>
     </div>

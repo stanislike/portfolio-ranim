@@ -5,20 +5,20 @@
   background-color: $olivenoir-color;
 
   .banner-section {
-    padding-top: 20vh;
+    padding-top: 27vh;
     text-align: center;
 
     h1 {
-      padding-bottom: 12px;
-      font-size: 80px;
+      padding-bottom: 1rem;
+      font-size: 5.25rem;
       text-transform: uppercase;
       font-weight: bold;
       color: $jouvance-color;
     }
 
     h2 {
-      padding-top: 4px;
-      font-size: 24px;
+      padding-top: 0.25rem;
+      font-size: 1.5rem;
       font-weight: bold;
       color: $jouvance-color;
     }
@@ -27,14 +27,14 @@
       display: inline-block;
       li {
         width: 200px;
-        font-size: 16px;
+        font-size: 1rem;
         color: $olivenoir-color;
         background-color: $jouvance-color;
         text-align: center;
         font-weight: 400;
-        margin-top: 50px;
-        padding: 10px 0px;
-        border-radius: 30px;
+        margin-top: 3rem;
+        padding: 0.5rem 0px;
+        border-radius: 2rem;
       }
       :hover {
         color: $jouvance-color;

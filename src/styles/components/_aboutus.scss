@@ -1,24 +1,24 @@
 .about-section {
-  padding-top: 90px;
+  padding-top: 5.625rem;
   display: flex;
   align-items: center;
 
   .left {
     width: 50%;
-    padding: 0 15px;
+    padding: 0 1rem;
 
     .text-container {
       padding-left: 100px;
 
       h2 {
-        padding-bottom: 50px;
-        font-size: 40px;
+        padding-bottom: 3rem;
+        font-size: 2.5rem;
         color: rgb(31, 31, 31);
         font-weight: bold;
       }
 
       p {
-        font-size: 16px;
+        font-size: 1rem;
         color: rgb(31, 31, 31);
       }
     }

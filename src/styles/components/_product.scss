@@ -1,0 +1,81 @@
+.product-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5rem 0;
+
+  .card {
+    height: 15rem;
+    width: 15rem;
+
+    .img-container-0 {
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/img/mockup/argile\ verte\ .png")
+        center/cover;
+    }
+    .img-container-1 {
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/img/mockup/base\ neutre_.png") center/cover;
+    }
+    .img-container-2 {
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/img/mockup/box\ anti\ age_.png")
+        center/cover;
+    }
+    .img-container-3 {
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/img/mockup/box\ cheveux.png") center/cover;
+    }
+    .img-container-4 {
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/img/mockup/chute\ de\ cheveux.png")
+        center/cover;
+    }
+    .img-container-5 {
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/img/mockup/creme\ rich\ 2.png") center/cover;
+    }
+    .img-container-6 {
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/img/mockup/carte.png") center/cover;
+    }
+    .img-container-7 {
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/img/mockup/creme\ riche\ 3.png")
+        center/cover;
+    }
+    .img-container-8 {
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/img/mockup/creme\ solaire\ .png")
+        center/cover;
+    }
+    .img-container-9 {
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/img/mockup/cure\ anti\ chute_.png")
+        center/cover;
+    }
+    .img-container-10 {
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/img/mockup/HENNE.png") center/cover;
+    }
+    .img-container-11 {
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/img/mockup/mockup\ savon.png") center/cover;
+    }
+  }
+}

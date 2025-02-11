@@ -1,33 +1,47 @@
-import React from "react";
-import { useRef } from "react";
+import React, { useRef, useEffect, useCallback } from "react";
 import MyVideo from "../assets/video/elenor.mp4";
 
 const Video = () => {
   const videoRef = useRef(null);
 
-  const handlePlay = () => {
-    console.log("play button clicked");
-
-    const video = videoRef.current;
-    console.log(video);
-
-    if (video) {
-      video
-        .play()
-        .then(() => {
-          if (video.requestFullscreen) {
-            video.requestFullscreen();
-          } else if (video.mozRequestFullScreen) {
-            video.mozRequestFullScreen();
-          } else if (video.webkitRequestFullscreen) {
-            video.webkitRequestFullscreen();
-          } else if (video.msrequestFullscreen) {
-            video.msrequestFullscreen();
-          }
-        })
-        .catch((err) => console.error("Erreur pendant la lecture :", err));
+  const enterFullscreen = (video) => {
+    if (!video) return;
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } else if (video.mozRequestFullScreen) {
+      video.mozRequestFullScreen();
+    } else if (video.webkitRequestFullscreen) {
+      video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) {
+      video.msRequestFullscreen();
     }
   };
+
+  const handlePlay = useCallback(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    video
+      .play()
+      .then(() => enterFullscreen(video))
+      .catch((err) => console.error("Erreur pendant la lecture :", err));
+  }, []);
+
+  const handleFullscreenChange = useCallback(() => {
+    const video = videoRef.current;
+    if (!document.fullscreenElement && video) {
+      video.pause();
+      // Si tu veux que la vidéo se remette à zéro quand tu enlève le plein écran
+      // video.currentTime = 0;
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    };
+  }, [handleFullscreenChange]);
 
   return (
     <div className="video-section">
